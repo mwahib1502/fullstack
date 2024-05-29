@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supplier Form</title>
+    <link rel="stylesheet" href="assets/form_sup.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-box">
+            <h2>Supplier Form</h2>
+            <form>
+                <div class="form-row">
+                    <div class="form-column">
+                        <div class="input-group">
+                            <label for="kode_supplier">Kode Supplier</label>
+                            <input type="number" id="kode_supplier" name="kode_supplier" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="nama_supplier">Nama Supplier</label>
+                            <input type="text" id="nama_supplier" name="nama_supplier" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="contact_person">Contact Person</label>
+                            <input type="text" id="contact_person" name="contact_person" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="alamat">Alamat</label>
+                            <input type="text" id="alamat" name="alamat" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="kota">Kota</label>
+                            <input type="text" id="kota" name="kota" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="email">E-Mail</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="no_telp">No. Telp</label>
+                            <input type="number" id="no_telp" name="no_telp" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="no_hp">No. HP/WhatsApp</label>
+                            <input type="number" id="no_hp" name="no_hp" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Dasar Pengenaan Pajak</label>
+                            <input type="radio" id="pkp" name="dasar_pajak" value="PKP">
+                            <label for="pkp">PKP</label>
+                            <input type="radio" id="nonpkp" name="dasar_pajak" value="NonPKP">
+                            <label for="nonpkp">NonPKP</label>
+                        </div>
+                        <div class="input-group">
+                            <label for="tax">Tax (%)</label>
+                            <input type="number" id="tax" name="tax" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="discount1">Discount1 (%)</label>
+                            <input type="number" id="discount1" name="discount1" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="discount2">Discount2 (%)</label>
+                            <input type="number" id="discount2" name="discount2" required>
+                        </div>
+                    </div>
+                    <div class="form-column">
+                        <div class="input-group">
+                            <label for="type_supplier">Type Supplier</label>
+                            <select id="type_supplier" name="type_supplier" required>
+                                <option value="Perorangan">Perorangan</option>
+                                <option value="Perusahaan">Perusahaan</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label for="nama_npwp">Nama NPWP</label>
+                            <input type="text" id="nama_npwp" name="nama_npwp" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="npwp">NPWP</label>
+                            <input type="number" id="npwp" name="npwp" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="payment_terms">Payment Terms by Days</label>
+                            <input type="number" id="payment_terms" name="payment_terms" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="credit_limit">Credit Limit</label>
+                            <input type="number" id="credit_limit" name="credit_limit" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="type_bank">Type Bank</label>
+                            <select id="type_bank" name="type_bank" required>
+                                <option value="BCA">BCA</option>
+                                <option value="MANDIRI">MANDIRI</option>
+                                <option value="BRI">BRI</option>
+                                <option value="PERMATA">PERMATA</option>
+                                <option value="BNI">BNI</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label for="bank_account">Bank Account</label>
+                            <input type="number" id="bank_account" name="bank_account" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="cabang_bank">Cabang Bank</label>
+                            <input type="text" id="cabang_bank" name="cabang_bank" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="atas_nama_rekening">Atas Nama Rekening</label>
+                            <input type="text" id="atas_nama_rekening" name="atas_nama_rekening" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-group full-width">
+                    <label for="remarks">Remarks</label>
+                    <textarea id="remarks" name="remarks" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

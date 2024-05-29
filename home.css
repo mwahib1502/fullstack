@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('login.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.navbar {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 20px;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.menu-item {
+    position: relative;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+}
+
+.menu-item:hover .submenu {
+    display: block;
+}
+
+.submenu, .sub-submenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.submenu {
+    top: 100%;
+    left: 0;
+}
+
+.sub-submenu {
+    top: 0;
+    left: 100%;
+}
+
+.submenu-item:hover .sub-submenu {
+    display: block;
+}
+
+.submenu li, .sub-submenu li {
+    border-bottom: 1px solid #444;
+}
+
+.submenu li:last-child, .sub-submenu li:last-child {
+    border-bottom: none;
+}
+
+.submenu a, .sub-submenu a {
+    padding: 10px 20px;
+    white-space: nowrap;
+}
+
+.submenu a:hover, .sub-submenu a:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
